@@ -14,7 +14,7 @@ Before starting with the model, let's first understand what is Customer Lifetime
 
 **What is Customer Lifetime Value?**
 
-Customer lifetime value (CLV) is one of the key stats likely to be tracked as part of a customer experience program. CLV is a measurement of how valuable a customer is to your company with an unlimited time span as opposed to just the first purchase. This metric helps you understand a reasonable cost per acquisition.
+[Customer lifetime value](https://en.wikipedia.org/wiki/Customer_lifetime_value) (CLV) is one of the key stats likely to be tracked as part of a customer experience program. CLV is a measurement of how valuable a customer is to your company with an unlimited time span as opposed to just the first purchase. This metric helps you understand a reasonable cost per acquisition.
 CLV is the total worth to a business of a customer over the whole period of their relationship. It’s an important metric as it costs less to keep existing customers than it does to acquire new ones, so increasing the value of your existing customers is a great way to drive growth.
 
 **Challenges -** 
@@ -70,7 +70,7 @@ e) Streamlit
 f) Numpy
 g) Pandas
 
-**For Model Hosting: Heroku**
+**For Model Hosting:** Heroku
 
 *****Miscellaneous:*****
 
