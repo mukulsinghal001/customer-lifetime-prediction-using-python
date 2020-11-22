@@ -38,7 +38,7 @@ There are basically two types of business context which I am going to discuss be
 
 **Purchase Opportunities Types:**
 
-**a) Continuous -** As the name is saying the it refers the purchase opportunites when there is continuous purchase happened by the customers during the certain span.
+**a) Continuous -** It refers the purchase opportunites when there is continuous purchases done by the customers.
 
 **b) Discrete -** Under discrete, the purchase happened on a specific time period. For Ex- Subscription Plan
 
