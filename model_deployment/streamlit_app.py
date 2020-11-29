@@ -1,6 +1,20 @@
+
+#adding necessary libraries
 import streamlit as st
 import pandas as pd
 import lifetimes
+import math
+import numpy as np
+import xlrd
+import datetime
+np.random.seed(42)
+import altair as alt
+import time
+import warnings
+warnings.filterwarnings("ignore")
+from math import sqrt
+import matplotlib.pyplot as plt
+from sklearn.cluster import KMeans
 from lifetimes.plotting import plot_frequency_recency_matrix
 from lifetimes.plotting import plot_probability_alive_matrix
 from lifetimes.plotting import plot_period_transactions
@@ -8,23 +22,8 @@ from lifetimes.utils import calibration_and_holdout_data
 from lifetimes import ParetoNBDFitter
 from lifetimes.plotting import plot_history_alive
 from sklearn.metrics import mean_squared_error, r2_score
-import math
-from math import sqrt
-import matplotlib.pyplot as plt
-import numpy as np
-import seaborn as sns
-import xlrd
-import warnings
-warnings.filterwarnings("ignore")
-import datetime
-np.random.seed(42)
-from sklearn.cluster import KMeans
-import altair as alt
-import time
 
-st.markdown("""
-
-# Customer Lifetime Prediction App 👋
+st.markdown(""" # Customer Lifetime Prediction App 👋
 
 
 Upload the RFM data and get your customer lifetime prediction on the fly !!! :smile:
@@ -41,7 +40,7 @@ st.sidebar.image("http://logok.org/wp-content/uploads/2014/06/City-of-Melbourne-
 st.sidebar.markdown(""" **Made with :heart: by Mukul Singhal** """)
 
 
-st.sidebar.title("Input Features")
+st.sidebar.title("Input Features :pencil:")
 
 
 st.sidebar.markdown("""
@@ -54,13 +53,6 @@ days = st.sidebar.slider("Select The No. Of Days", min_value = 1, max_value = 36
 
 profit = st.sidebar.slider("Select the Profit Margin", min_value = 0.01, max_value = 0.09, step = 0.01, value = 0.05)
 
-st.sidebar.markdown("""
-
-Before uploading the file, please select the input features first.
-
-**Note:** Only Use "CSV" File.
-
-	""")
 
 t_days = days
 
@@ -71,15 +63,26 @@ slider_data = {
 	"Profit": profit_m
 }
 
-st.markdown("""
+st.sidebar.markdown("""
 
-### Selected Input Features
+### Selected Input Features :page_with_curl:
 
 	""")
 
 features = pd.DataFrame(slider_data, index = [0])
 
-st.write(features)
+st.sidebar.write(features)
+
+st.sidebar.markdown("""
+
+Before uploading the file, please select the input features first.
+
+Also, please make sure the columns are in proper format. For reference you can download the [dummy data](https://raw.githubusercontent.com/mukulsinghal001/customer-lifetime-prediction-using-python/main/model_deployment/sample_file.csv).
+
+**Note:** Only Use "CSV" File.
+
+	""")
+
 
 if data is not None:
 
@@ -179,14 +182,19 @@ if data is not None:
 		#creating a button to download the result
 
 		if st.button("Download"):
-			st.write("Successfully Downloaded!!! Please check your default download location.")
+			st.write("Successfully Downloaded!!! Please Check Your Default Download Location...:smile:" )
 			return download.to_csv("customer_lifetime_prediction_result.csv")
 
+
 	#calling the function		
+
+	st.markdown("""
+
+		## Customer Lifetime Prediction Result :bar_chart:
+
+		""")
 
 	load_data(data)
 
 else:
 	st.text("Please Upload the CSV File")
-
-
