@@ -54,7 +54,7 @@ Following the problem and motivation described above, the purpose of this study 
 
 a) Scikit Learn
 b) Lifetimes
-c) Plotly, Matplotlib, Seaborn
+c) Plotly, Matplotlib, Seaborn, Altair
 d) XLRD
 e) Streamlit
 f) Numpy
@@ -63,11 +63,13 @@ h) Datetime
 i) Math
 j) Pickle
 k) Warnings
+6) Streamlit
 
-**For Model Hosting:** Heroku
+
+**For Model Hosting & Deployment:** Heroku | Github | Streamlit
 
 *****Miscellaneous:*****
 
 [Midway Report Link](https://github.com/mukulsinghal001/customer-lifetime-prediction-using-python/blob/main/Customer%20Lifetime%20Prediction%20Using%20Probabilistic%20Models%20-%20Midway%20Report.ipynb) | [Attributes TXT File](https://github.com/mukulsinghal001/customer-lifetime-prediction-using-python/blob/main/Online%20Retail%20Dataset%20Attributes%20Info.txt) | [Dataset Link](https://archive.ics.uci.edu/ml/datasets/Online+Retail+II#) | [Baseline Model Results](https://github.com/mukulsinghal001/customer-lifetime-prediction-using-python/blob/main/Predicted%20CLV%20Results.csv)
 
-Final Model will be updated Soon...!!!!!
+Final Model is Live Now: https://customer-lifetime-prediction.herokuapp.com/
