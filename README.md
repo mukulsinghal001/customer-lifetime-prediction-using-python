@@ -72,7 +72,7 @@ k) Warnings
 
 [Midway Report Link](https://github.com/mukulsinghal001/customer-lifetime-prediction-using-python/blob/main/Customer%20Lifetime%20Prediction%20Using%20Probabilistic%20Models%20-%20Midway%20Report.ipynb) | [Attributes TXT File](https://github.com/mukulsinghal001/customer-lifetime-prediction-using-python/blob/main/Online%20Retail%20Dataset%20Attributes%20Info.txt) | [Dataset Link](https://archive.ics.uci.edu/ml/datasets/Online+Retail+II#) | [Baseline Model Results](https://github.com/mukulsinghal001/customer-lifetime-prediction-using-python/blob/main/Predicted%20CLV%20Results.csv)
 
-Final Model is Live Now: https://customer-lifetime-prediction.herokuapp.com/
+Final Model is Live Now: https://mukulsinghal001-customer-lifetime-model-de-streamlit-app-t3zaq6.streamlit.app/
 
 
 ### Lead Scoring Model Project:
